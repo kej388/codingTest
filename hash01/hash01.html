@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(participant, completion) {
+        var i;
+        var answer = '';
+        for(i = 0; i < completion.length; i++) {
+            if(participant[0] == completion[i]) {
+                continue;
+            }
+            answer = completion[i];
+        }
+
+        return answer;
+        }
+
+        var participant = ("leo", "kiki", "eden");
+        var completion = ("eden", "kiki");
+        console.log(solution(participant, completion));
+    </script>
+</body>
+</html>
