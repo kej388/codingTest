@@ -8,21 +8,27 @@
 <body>
     <script>
         function solution(participant, completion) {
-        var i;
-        var answer = '';
-        for(i = 0; i < completion.length; i++) {
-            if(participant[0] == completion[i]) {
-                continue;
-            }
-            answer = completion[i];
-        }
+        
+        var answer = new Array('');
+        
+        
+        
 
         return answer;
         }
-
-        var participant = ("leo", "kiki", "eden");
-        var completion = ("eden", "kiki");
-        console.log(solution(participant, completion));
+        var i = 0;
+        var participant = new Array('leo', 'kiki', 'eden');
+        var completion = new Array('eden', 'kiki');
+        participant.sort((a, b) => b.length - a.length);
+        completion.sort((a, b) => b.length - a.length);
+        var answer = [];
+        //while(i < participant.length - 1) {
+             if(participant[0] == completion[1]) {
+                answer.push(participant[0]);
+             }
+         //}
+        console.log(answer);
+        //console.log(solution(participant,completion));
     </script>
 </body>
 </html>
