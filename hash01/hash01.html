@@ -8,19 +8,19 @@
 <body>
     <script>
         function solution(participant, completion) {
+        var answer = "";
+        var i;
         participant.sort();
         completion.sort();
-        var i = 0;
-        while(i < completion.length - 1) {
-            if(participant[0] == completion[0]) {
-                participant.shift();
-                completion.shift();
-            } else {
-                return participant[0];
+        completion.push("");
+        for(i = 0; i < completion.length; i++) {
+            if(participant[i] != completion[i]) {
+                answer= participant[i];
+                break;
             }
-            i++;
         }
-        }
+        return answer;
+    }
         
         var participant = ["leo", "kiki", "eden"];
         var completion = ["eden", "kiki"];
