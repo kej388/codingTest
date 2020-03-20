@@ -10,7 +10,7 @@ public class Mockexam {
 
 		System.out.println("가장 문제를 많이 맞힌 사람은 수포자는 " + result + "입니다.");
 	}
-
+	
 	public static int[] solution(int[] answers) {
     	
         // 수포자들의 찍는 방식 
