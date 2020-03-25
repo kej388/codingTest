@@ -1,17 +1,7 @@
 package stage9;
 
 public class Seat {
+	String name;
 	
-}
-
-class SeatS extends Seat{
-	
-}
-
-class SeatA extends Seat{
-	
-}
-
-class SeatB extends Seat{
 	
 }

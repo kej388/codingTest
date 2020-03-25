@@ -5,14 +5,34 @@ import java.util.Scanner;
 public class SeatReservation {
 	
 	Scanner sc = new Scanner(System.in);
+	Seat[] s = new Seat[10];
+	Seat[] a = new Seat[10];
+	Seat[] b = new Seat[10];
 	
+	// 좌석구분 예약
 	public void reservate() {
 		System.out.println("좌석구분  S(1), A(2), B(3) >> ");
 		int num = sc.nextInt();
 		
 		if(num == 1) {
+			for(int i = 0; i < s.length; i++) {
+				s[i] = new Seat();
+			}
+			System.out.print("S>> ");
+			
+		} else if(num == 2) {
+			
+		} else if(num == 3) {
 			
 		}
+		
+		System.out.println("이름 >> ");
+		String name = sc.next();
+		
+		System.out.println("번호>> ");
+		int seatNum = sc.nextInt();
+		
+		
 	}
 	
 	public void view() {
