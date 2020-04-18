@@ -16,6 +16,8 @@ public class Point {
 	}
 	
 	protected void move(int x, int y) {
+		if(x > 0 && y > 0) {
 		this.x = x; this.y = y;
+		}
 	}
 }
